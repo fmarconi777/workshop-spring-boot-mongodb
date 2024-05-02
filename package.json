@@ -1,0 +1,15 @@
+{
+  "name": "workshop-spring-boot-mongodb",
+  "version": "1.0.0",
+  "description": "Learning spring boot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "author": "Felipe Pedrosa",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^9.0.11"
+  }
+}
