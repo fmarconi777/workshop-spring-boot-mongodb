@@ -1,4 +1,4 @@
-package com.workshop.domain.user;
+package com.workshop.workshopspringbootmongodb.domain.user;
 
 import java.io.Serializable;
 
