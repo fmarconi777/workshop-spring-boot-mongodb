@@ -1,4 +1,4 @@
-package com.workshop.workshopspringbootmongodb.controller;
+package com.workshop.controller;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.workshop.workshopspringbootmongodb.domain.user.User;
+import com.workshop.domain.user.User;
 
 @RestController
 @RequestMapping("/user")
