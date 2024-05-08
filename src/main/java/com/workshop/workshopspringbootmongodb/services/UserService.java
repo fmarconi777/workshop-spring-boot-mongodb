@@ -35,4 +35,8 @@ public class UserService {
     public User insert(User obj) {
         return repository.insert(obj);
     }
+
+    public User fromDTO(UserDTO objDto) {
+        return new User(objDto.id(), objDto.name(), objDto.email());
+    }
 }
