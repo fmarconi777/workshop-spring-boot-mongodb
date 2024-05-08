@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.workshop.workshopspringbootmongodb.domain.user.User;
+import com.workshop.workshopspringbootmongodb.dto.UserDTO;
 import com.workshop.workshopspringbootmongodb.repository.UserRepository;
 import com.workshop.workshopspringbootmongodb.services.exception.ObjectNotFoundException;
 
@@ -29,5 +30,9 @@ public class UserService {
         
         // Outra solução para o findById
         // return user.orElseThrow(() -> new ObjectNotFoundException("Object not found")); //NOSONAR
+    }
+
+    public User insert(User obj) {
+        return repository.insert(obj);
     }
 }
