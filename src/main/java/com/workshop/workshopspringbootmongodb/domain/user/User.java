@@ -1,9 +1,14 @@
 package com.workshop.workshopspringbootmongodb.domain.user;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.workshop.workshopspringbootmongodb.domain.post.Post;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -24,6 +29,15 @@ public class User implements Serializable {
     private String id;
     private String name;
     private String email;
+    @Builder.Default
+    @DBRef(lazy = true)
+    private List<Post> posts = new ArrayList<>();
+
+    public User(String id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
 
     @Override
     public int hashCode() {
@@ -32,7 +46,7 @@ public class User implements Serializable {
         result = prime * result + ((id == null) ? 0 : id.hashCode());
         return result;
     }
-
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
