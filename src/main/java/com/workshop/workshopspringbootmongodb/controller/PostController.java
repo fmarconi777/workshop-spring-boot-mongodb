@@ -11,7 +11,7 @@ import com.workshop.workshopspringbootmongodb.domain.post.Post;
 import com.workshop.workshopspringbootmongodb.services.PostService;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/post")
 public class PostController {
 
     @Autowired
