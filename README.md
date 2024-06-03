@@ -209,7 +209,7 @@ Distribuído sob a licença GNU AGPLv3. Veja `LICENSE.txt` para mais informaçõ
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/fmarconi777/workshop-spring-boot-mongodb/master/LICENSE.txt
+[license-url]: https://github.com/fmarconi777/workshop-spring-boot-mongodb/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/fmarconi777
 [product-screenshot]: images/screenshot.png
